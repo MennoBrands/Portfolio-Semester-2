@@ -1,0 +1,579 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /\ RESET /\ */
+
+/* \/ START \/ */
+
+
+/* Fonts  */
+@font-face {
+    font-family: "Ovo";
+    src: url("../Fonts/Ovo/Ovo-Regular.otf");
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("../Fonts/Muli/Muli-Light.ttf");
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("../Fonts/Bitter/Bitter-Bold.otf");
+}
+
+/* Body */
+body{
+    font-family: Muli;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: Bitter;
+    color: black;
+    font-size: 50px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+h2{
+    font-family: Bitter;
+    color: black;
+    font-size: 40px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+a{
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    border: 1px solid #3e3e3e;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #5bc0de;
+    color: white;
+}
+
+
+/* Landing Page */
+
+#landing {
+    background: url("../Images/BackgroundMain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Typmachine {
+    position: absolute;
+    font-size: 40px;
+    line-height: 150%;
+    width: 700px;
+    top: 20%;
+    left: 40%;
+}
+
+.Indexbuttons {
+    position: absolute;
+    display: flex;
+    width: 350px;
+    top: 2%;
+    bottom: 2%;
+    right: 5%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.IndexButton {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.IndexButton:hover {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Landing Page & Nav */
+
+#front {
+    z-index: 2;
+}
+
+#back {
+    z-index: 1;
+}
+
+/* Nav */
+
+.Navbuttons {
+     position: absolute;
+     display: flex;
+     width: 75%;
+     left: 12%;
+     top: 12%;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+ }
+
+.Navbutton {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Navbutton:hover {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Navlogo {
+    position: absolute;
+    top: 1%;
+    left: 33%;
+}
+
+.Navlogon {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Navlogon:hover {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Navlogin {
+    position: absolute;
+    top: 2%;
+    left: 73.6%;
+}
+
+.Navlogin {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.Navlogin:hover {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Content Blocks */
+
+#Container {
+    position: absolute;
+    width: 1500px;
+    left: 12%;
+    top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#block1 {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 300px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block2 {
+    position: relative;
+    overflow: hidden;
+    width: 650px;
+    height: 300px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block3 {
+    position: relative;
+    overflow: hidden;
+    width: 650px;
+    height: 305px;
+    margin-top: -311px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block4 {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    margin-top: -311px;
+    height: 305px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block5 {
+    position: relative;
+    overflow: hidden;
+    width: 310px;
+    height: 611px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockbackgroundsmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    background: url("../Images/21223132.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px) grayscale(100%);
+    -webkit-filter: blur(3px) grayscale(100%);
+    -moz-filter: blur(3px) grayscale(100%);
+    -o-filter: blur(3px) grayscale(100%);
+    transition: all 1s ease;
+}
+
+.blockbackgroundbig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 650px;
+    height: 300px;
+    background: url("../Images/21223132.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px) grayscale(100%);
+    -webkit-filter: blur(3px) grayscale(100%);
+    -moz-filter: blur(3px) grayscale(100%);
+    -o-filter: blur(3px) grayscale(100%);
+    transition: all 1s ease;
+}
+
+.blockbackgroundrealybig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 310px;
+    height: 611px;
+    background: url("../Images/21223132.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px) grayscale(100%);
+    -webkit-filter: blur(3px) grayscale(100%);
+    -moz-filter: blur(3px) grayscale(100%);
+    -o-filter: blur(3px) grayscale(100%);
+    transition: all 1s ease;
+}
+
+#block1:hover .blockbackgroundsmall,
+#block1:focus .blockbackgroundsmall {
+    transform: scale(1.2);
+    filter: blur(0px) grayscale(0%);
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    transition: all 1s ease;
+}
+
+#block2:hover .blockbackgroundbig,
+#block2:focus .blockbackgroundbig {
+    transform: scale(1.2);
+    filter: blur(0px) grayscale(0%);
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    transition: all 1s ease;
+}
+
+#block3:hover .blockbackgroundbig,
+#block3:focus .blockbackgroundbig {
+    transform: scale(1.2);
+    filter: blur(0px) grayscale(0%);
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    transition: all 1s ease;
+}
+
+#block4:hover .blockbackgroundsmall,
+#block4:focus .blockbackgroundsmall {
+    transform: scale(1.2);
+    filter: blur(0px) grayscale(0%);
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    transition: all 1s ease;
+}
+
+#block5:hover .blockbackgroundrealybig,
+#block5:focus .blockbackgroundrealybig {
+    transform: scale(1.2);
+    filter: blur(0px) grayscale(0%);
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    transition: all 1s ease;
+}
+
+.blocktitle {
+    position: absolute;
+    z-index: 10;
+    transition: all 1s ease;
+}
+
+.blocktitle h1{
+    transition: all 1s ease;
+}
+
+#block1:hover .blocktitle h1,
+#block1:focus .blocktitle h1 {
+    font-size: 55px;
+    transition: all 1s ease;
+}
+
+#block2:hover .blocktitle h1,
+#block2:focus .blocktitle h1 {
+    font-size: 55px;
+    transition: all 1s ease;
+}
+
+#block3:hover .blocktitle h1,
+#block3:focus .blocktitle h1 {
+    font-size: 55px;
+    transition: all 1s ease;
+}
+
+#block4:hover .blocktitle h1,
+#block4:focus .blocktitle h1 {
+    font-size: 55px;
+    transition: all 1s ease;
+}
+
+#block5:hover .blocktitle h1,
+#block5:focus .blocktitle h1 {
+    font-size: 55px;
+    transition: all 1s ease;
+}
+
+/* CMS */
+#LoginDiv {
+    top: 12%;
+    left: 34.5%;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+}
+
+#ContentList {
+    top: 12%;
+    left: 37%;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+}
+
+#NewContent {
+    top: 12%;
+    left: 34%;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+#ContentEdit{
+    top: 12%;
+    left: 31%;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 1000px;
+}
+
+/* Assignment */
+#AssignmentContainer{
+    position: absolute;
+    overflow: hidden;
+    top: 34.3%;
+    left: 11%;
+    width: 1420px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+}
+
+#AssignmentText {
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#AssignmentContainerTitle{
+    position: absolute;
+    overflow: hidden;
+    top: 27.65%;
+    left: 11%;
+    height: 55px;
+    width: 1460px;
+    border: 3px solid transparent;
+    -webkit-border-image: url(../Images/borderruis.png) 10 round; /* Safari 3.1-5 */
+    -o-border-image: url(../Images/borderruis.png) 10 round; /* Opera 11-12.1 */
+    border-image: url(../Images/borderruis.png) 10 round;
+}
+
+#AssignmentTitle{
+    display: flex;
+    margin-top: 3px;
+    justify-content: center;
+}
+
+.PDFButtons{
+    position: absolute;
+    top: 22%;
+    left: 79.4%;
+}
+
+.PDFButton{
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.PDFButton:Hover{
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+

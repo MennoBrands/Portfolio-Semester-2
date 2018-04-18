@@ -1,0 +1,42 @@
+<!-- login pagina voor CMS systeem -->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<meta name="description" content="Portfolio Menno Brands">
+	<meta name="author" content="Menno Brands">
+	<link rel="shortcut icon" type="image/png" href=""/>
+	<link rel="stylesheet" type="text/css" href="../CSS/Main.css">
+</head>
+	<nav>
+		<section class="Navlogo" id="front">
+			<section class="Navlogon">
+				<a href="../Index.html">
+					<img src="../Images/nav/navMennoBrandsBlack.png" alt="logo button">
+				</a>
+			</section>
+		</section>
+		<section class="Navlogo" id="back">
+			<section class="Navlogon">
+				<a href="../Index.html">
+					<img src="../Images/nav/navMennoBrands.png" alt="logo button">
+				</a>
+			</section>
+		</section>
+	</nav>
+    <body>
+		<section id="LoginDiv">
+            <h1> Portfolio </h1>
+            <h2> Content Management System </h2>
+            <div id="formcontent">
+                <form action="../Includes/Login.php" method="POST" autocomplete="off" >
+                    <input type="text"  name="username" placeholder="Enter username" autofocus> <p>
+                    <input type="password" name="password" placeholder="Password"> <p>
+                    <input type="submit" value="Sign in">
+                </form>
+            </div>
+		</section>
+	</body>
+</html>
