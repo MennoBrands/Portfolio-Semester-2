@@ -1,14 +1,14 @@
 <?php
 
-//	$sqlHost = 'studmysql01.fhict.local';
-//	$sqlUser = 'dbi361931';
-//	$sqlPass = 'Rataplan12';
-//	$sqlDatabase = 'dbi361931';
+//	$sqlHost = '';
+//	$sqlUser = '';
+//	$sqlPass = '';
+//	$sqlDatabase = '';
 
-	$sqlHost = 'localhost';
-	$sqlUser = 'root';
+	$sqlHost = '';
+	$sqlUser = '';
 	$sqlPass = '';
-	$sqlDatabase = 'portfolio';
+	$sqlDatabase = '';
 
 	$conn = new PDO("mysql:host=$sqlHost;dbname=$sqlDatabase", $sqlUser, $sqlPass);
 	// set the PDO error mode to exception
